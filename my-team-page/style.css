@@ -1,0 +1,127 @@
+:root {
+    --logo-font : 'PT Serif', sans-serif;
+    --text-font : 'Poppins', sans-serif;
+    --footer-font : 'Montserrat', sans-serif;
+}
+
+/* GLOBAL RESET */
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+header {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+header h1 {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 36px;
+    flex: 1 1 450px;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+header .text-box {
+    font-family: var(--text-font);
+    flex: 1 1 450px;
+    padding: 30px;
+}
+.text-box h3 {
+    font-weight: 600;
+    font-weight: 18px;
+    margin-bottom: 15px;
+}
+.text-box p {
+    font-weight: 400;
+    line-height: 1.5em;
+    font-weight: 18px;
+    text-align: left;
+}
+.team-gallery {
+    margin-bottom: 100px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+    width: 230px;
+    margin: 20px;
+    position: relative;
+    margin-bottom: 80px;
+}
+.card:nth-child(2), .card:nth-child(5) {
+    transform: translateY(80px);
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+.role {
+    font-family: var(--logo-font);
+    font-weight: 400;
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    top: 2%;
+    right: -25px;
+}
+.name {
+    font-family: var(--text-font);
+    font-weight: 600;
+    font-size: 18px;
+}
+.footer {
+    text-align: center;
+    font-family: var(--footer-font);
+    font-weight: 600;
+    font-size: 14px;
+    color: #a9a9a9;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+    header {
+        margin: 0;
+    }
+    .text-box p {
+        font-size: 14px;
+    }
+    .card {
+        width: 130px;
+    }
+    .team-gallery {
+        margin-bottom: 20px;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    .row .card:nth-child(2n) {
+        transform: translateY(50px);
+    }
+    .role {
+        font-size: 10px;
+    }
+    .name {
+        font-size: 14px;
+    }
+    .footer {
+        margin-top: 100px;
+    }
+}
