@@ -112,6 +112,9 @@ header .text-box {
     .card {
         margin-bottom: 20px;
     }
+    .card:nth-child(5) {
+        transform: translateY(0);
+    }
     .row .card:nth-child(2n) {
         transform: translateY(50px);
     }
