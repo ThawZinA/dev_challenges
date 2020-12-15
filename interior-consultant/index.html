@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>THIS INTERIOR</h1>
+        </div>
+        <div class="navigation">
+            <ul class="nav-link">
+                <li class="nav-link-item active">Home</li>
+                <li class="nav-link-item">Collection</li>
+                <li class="nav-link-item">About</li>
+                <li class="nav-link-item">Contact</li>
+            </ul>
+        </div>
+        <div class="hamburger-menu">
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-text">
+            <h1>Modern interior</h1>
+            <p>
+                A full-service residental & commercial interior design and staging company offering professional organizing & eco-services.
+            </p>
+            <a href="#">Read more &srarr;</a>
+        </div>
+
+        <div class="header-photo"> 
+            <div class="header-meta">
+                <div class="title">
+                    <span>
+                        <img src="img/photo2.png" alt="avatar">
+                    </span>
+                    <span>
+                        <p>Aliza Webber</p>
+                        <p>Interior designer</p>
+                    </span>
+                </div>
+                <div class="description">
+                    Design in 2020 by Aliza Webber
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <p>Thaw Zin Ag @ Devchallenges.io</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector(".hamburger-menu");
+        const navMenu = document.querySelector(".navigation");
+        toggleBtn.addEventListener("click", function toggleNav () {
+            if(!navMenu.classList.contains("open")) {
+                navMenu.classList.add("open")
+            } else {
+                navMenu.classList.remove("open")
+            }
+        });
+        
+    </script>
+</body>
+</html>
